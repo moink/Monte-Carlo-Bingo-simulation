@@ -26,5 +26,5 @@ for i=1:sidelength
     card(:,i)=delta*(i-1)+rp(1:sidelength)';
 end
 if freespace
-    card((i+1)/2,(i+1)/2)=0;
+    card((sidelength+1)/2,(sidelength+1)/2)=0;
 end
