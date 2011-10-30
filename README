@@ -5,7 +5,7 @@ ratio of numbers on cards to available numbers, whether or not there is a
 free space in the centre, are available as parameters to bingoprob.m
 
 This seems inefficient.  I'm thinking I should change the collection of cards
-from a cell array a three-dimensional matrix.  Other than that I can't think 
+from a cell array to a three-dimensional matrix.  Other than that I can't think 
 of any improvements.
 
 To run, run the script bingoscript.m
