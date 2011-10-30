@@ -1,0 +1,19 @@
+function card=makebingocard(sidelength,delta,freespace)
+
+if nargin<2
+    if nargin<1
+        sidelength=5;
+    end
+    delta=3*sidelength;
+end
+
+if delta<sidelength
+    error('Second argument must be >= first argument')
+end
+if freespace 
+
+card=zeros(sidelength);
+for i=1:sidelength
+    rp=randperm(delta);
+    card(:,i)=delta*(i-1)+rp(1:sidelength)';
+end
