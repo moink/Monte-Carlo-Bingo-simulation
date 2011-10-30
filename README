@@ -1,0 +1,5 @@
+Matlab solution to http://programmingpraxis.com/2009/02/19/bingo/ by moink
+
+Simulates games of Bingo.  Number of cards, number of runs, size of cards, ratio of numbers on cards to available numbers, whether or not there is a free space in the centre, are available as parameters.
+
+This seems inefficient.  I'm thinking I should change the collection of cards from a cell array a three-dimensional matrix.  Other than that I can't think of any improvements.
