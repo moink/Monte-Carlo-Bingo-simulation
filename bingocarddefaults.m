@@ -1,4 +1,4 @@
-function [sidelength,delta,freespace,maxnum] = bingocarddefaults(...
+function [sidelength,delta,freespace] = bingocarddefaults(...
     sidelength,delta,freespace)
 % Default values: sidelength=5, delta=3*sidelength, freespace=1
 
@@ -17,4 +17,3 @@ end
 if freespace && ~mod(sidelength, 2)
   error('Freespace only allowed with odd-sized cards')
 end
-maxnum = sidelength*delta;

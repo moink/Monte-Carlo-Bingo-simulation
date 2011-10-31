@@ -10,9 +10,10 @@ if ~exist('sidelength','var'), sidelength = []; end
 if ~exist('delta','var'), delta = []; end
 if ~exist('freespace','var'), freespace = []; end
 
-[sidelength,delta,freespace,maxnum] = ...
+[sidelength,delta,freespace] = ...
     bingocarddefaults(sidelength,delta,freespace);
 
+maxnum = sidelength*delta;
 callseq = randperm(maxnum);
 wins = 0;
 numturns = 0;
