@@ -1,6 +1,6 @@
 function card=makebingocard(sidelength,delta,freespace)
 %makes a bingo card of size sidelength x sidelength, with each column i
-%randomly choosing sidelength numbers between (i-1)*delta+1 and i*delta, 
+%randomly choosing sidelength numbers between (i-1)*delta+1 and i*delta,
 %with or without a free space in the middle
 %
 %Default values: sidelength=5, delta=3*sidelength, freespace=1
