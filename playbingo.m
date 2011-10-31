@@ -7,8 +7,8 @@ function numturns=playbingo(numcards,sidelength,delta,freespace)
 if ~exist('numcards','var'), numcards = 1; end
 
 if ~exist('sidelength','var'), sidelength = []; end
-if ~exist('delta','var'), delta = []; end
-if ~exist('freespace','var'), freespace = []; end
+if ~exist('delta','var'),      delta      = []; end
+if ~exist('freespace','var'),  freespace  = []; end
 
 [sidelength,delta,freespace] = ...
     bingocarddefaults(sidelength,delta,freespace);

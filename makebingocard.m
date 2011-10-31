@@ -4,8 +4,8 @@ function [card] = makebingocard(sidelength,delta,freespace)
 % with or without a free space in the middle
 
 if ~exist('sidelength','var'), sidelength = []; end
-if ~exist('delta','var'), delta = []; end
-if ~exist('freespace','var'), freespace = []; end
+if ~exist('delta','var'),      delta      = []; end
+if ~exist('freespace','var'),  freespace  = []; end
 
 [sidelength,delta,freespace] = ...
     bingocarddefaults(sidelength,delta,freespace);
