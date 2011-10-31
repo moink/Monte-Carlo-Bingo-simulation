@@ -1,7 +1,9 @@
 addpath ..
 global context
 
-context='won';
+test = 'checkbingocard:';
+
+context = [test 'won'];
   shouldequal('for one row of zeros',
     checkbingocard([
       1 2 3
@@ -30,7 +32,7 @@ context='won';
       7 8 0
     ]), 1);
 
-context='not won';
+context = [test 'not won'];
   shouldequal('in an initial state with center zero',
     checkbingocard([
       1 2 3

@@ -1,6 +1,6 @@
-%Monte Carlo simulation of Bingo games
-%Response to http://programmingpraxis.com/2009/02/19/bingo/
-%Output is :
+% Monte Carlo simulation of Bingo games
+% Response to http://programmingpraxis.com/2009/02/19/bingo/
+% Output is :
 %{
 averagefor1card =
 
@@ -14,12 +14,12 @@ averagefor500cards =
 
 Elapsed time is 219.205069 seconds.
 %}
-%Of course, since it's stochastic, answer will vary slightly every time
-%Also, elapsed time will depend on the speed of your computer and will also
-%vary from run to run.
+% Of course, since it's stochastic, answer will vary slightly every time
+% Also, elapsed time will depend on the speed of your computer and will also
+% vary from run to run.
 tic;
-averagefor1card=bingoprob(1)
+averagefor1card = bingoprob(1)
 toc
 tic;
-averagefor500cards=bingoprob(500)
+averagefor500cards = bingoprob(500)
 toc
